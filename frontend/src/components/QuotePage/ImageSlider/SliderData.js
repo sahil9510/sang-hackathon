@@ -18,7 +18,7 @@ export const SliderData = [
     {
       image:'para.jpg',
       title: "Paraphraser",
-      message: "Paraphrase tool has numerous features including, rewriting essays, removing plagiarism, and rewording articles. Our paraphrasing tool works best as a word changer and sentence rephraser.Nfmds"
+      message: "Paraphrase tool has numerous features including, rewriting essays, removing plagiarism, and rewording articles. Our paraphrasing tool works best as a word changer and sentence rephraser."
     },
     {
       image:'converter.jpg',
