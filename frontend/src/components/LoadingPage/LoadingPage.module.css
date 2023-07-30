@@ -1,0 +1,18 @@
+.quoteBox{
+    text-align: center;
+    width: 50vw;
+    position: relative;
+    top: 55vh;
+    left: 25vw;
+    color: #774936;
+}
+.quoteBox h4{
+    color: #774936;
+}
+
+
+@media (max-width:768px){
+    .quoteBox h4{
+        font-size: 1.2rem;
+    }
+}

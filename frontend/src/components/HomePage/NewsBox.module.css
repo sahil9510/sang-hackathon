@@ -1,0 +1,79 @@
+
+
+.newsBox{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 70vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.imageBox{
+    width: 120%;
+    overflow: hidden;
+}
+
+.newsBox img{
+    width: 120%;
+    justify-self:normal;
+    position: relative;
+    right: 10%;
+}
+
+
+.newsBox h2{
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 5%;
+}
+.content{
+    padding-left: 20px;
+}
+
+.content h5{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.content p{
+    font-size: 1rem;
+    display: inline-block;
+}
+
+
+@media (max-width:768px){
+    .newsBox{
+        width: 100vw;
+        height: 30vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imageBox{
+        width: 200%;
+        height: 100vw;
+    }
+
+    .newsBox h2{
+        padding-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    .content h5{
+        font-size: 1rem;
+    }
+
+    .newsBox img{
+        width: 50%;
+        position: relative;
+        justify-self: center;
+        right: 0;
+    }
+
+    .newsBox h6{
+        display: none;
+    }
+}

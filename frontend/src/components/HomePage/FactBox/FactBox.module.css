@@ -1,0 +1,55 @@
+.box{
+    padding: 50px 10px;
+    text-align: left;
+    width: 35vw;
+    
+    background-color: rgb(255, 255, 255,0);
+    border-radius: 10px;
+}
+
+
+
+.box h1{
+    color: #774936;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    display: inline-block;
+  font-size: 4rem;    
+}
+
+.box h2{
+    color: #774936;
+    margin-top: 4%;
+}
+
+.box p{
+    color: #774936;
+    font-size: 1.3rem;
+}
+
+.box h4{
+    color: #774936;
+    margin: 0;
+    display: inline-block;
+}
+
+
+@media (max-width: 768px){
+    .box{
+        text-align: center;
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .box h1{
+        font-size: 3rem;
+    }
+
+    .box h2{
+        margin-top:50px;
+    }
+
+    .box h4{
+         margin-left: 5px;   
+    }
+}

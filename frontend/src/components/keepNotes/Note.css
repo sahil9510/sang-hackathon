@@ -1,0 +1,88 @@
+.delete-icon {
+  font-size: 23px;
+  color: #432818;
+}
+.delete-icon:hover {
+  cursor: pointer;
+  font-size: 28px;
+}
+.note {
+  background-color: #e6b8a2;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add {
+  background-color: #c6878d;
+  color: #fff;
+}
+.add textarea {
+  font-size: 1.4rem;
+  margin-top: 5%;
+  padding-left: 5%;
+  border: none;
+  resize: none;
+  background-color: #c6878d;
+}
+.add textarea:focus {
+  align-self: flex-start;
+  padding-left: 5%;
+  font-size: 1.4rem;
+  outline: none;
+  resize: none;
+  width: 90%;
+}
+.save {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #ba4f5f;
+}
+.save:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  font-size: 18px;
+}
+.span-note {
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 5%;
+  margin-top: 3%;
+  font-size: 1.4rem;
+  color: #fff;
+}
+::placeholder {
+  font-size: 22px;
+}
+.add ::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+small {
+  color: #fff;
+}
+.add textarea {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .add {
+ display: flex;
+ min-height: 200px;
+
+  }
+  .note{
+    min-height: 200px;
+  }
+
+}

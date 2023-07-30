@@ -1,0 +1,212 @@
+/* .navbar{
+    color: black;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    background: inherit;
+    border-radius: 5px;
+    height: 10vh;
+    width: 100%;
+    padding: 0 50px 0;
+    margin: 0;
+    z-index: 100;
+} */
+
+.body {
+    height: 64px;
+    width: 0;
+    padding-right: 16px;
+    margin-left: -8px;
+    margin-top: -8px;
+    transition: left 1.2s ease;
+    background: inherit;
+    /* filter */
+    
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    z-index: 999;
+}
+
+.navbar { 
+    color: #9D6B53;
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background:rgba(255, 237, 216,0.9);
+    border-bottom: 1px solid rgba(225,225,225,0.5);
+    z-index: 1000;
+    animation: appearIn 1s ease-out both;
+  }
+
+
+.scrolled{
+    background-color: white !important;
+}
+
+.navbar a{
+    color: #9D6B53;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    color: inherit;
+}
+
+a.logo{
+    margin: 0;
+}
+
+.homeLink{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100px;
+    padding-bottom: 10px !important;
+    margin-right: 10px;
+}
+
+.homeLink:hover{
+    background-color: inherit !important;
+}
+
+.logo{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: -30px;
+}
+
+
+.tools{
+    margin-left: 3%;
+    padding-top: 26px;
+}
+
+.tools a:hover{
+    background-color:rgba(255, 237, 216,0.9) !important;
+    text-shadow: none !important;
+}
+
+.left{
+
+    margin-left: 4%;
+    display: flex;
+    width: 45%;
+}
+
+.left a{
+    margin-top: 2%;
+    padding: 3.5% 3%;
+    height: 100%;
+    font-size: 1.1rem;
+    /* margin: 2% 2%; */
+}
+
+.left a:hover{
+    font-size: 1.2rem;
+    background: rgba(243, 213, 181,0.3);
+    text-shadow: 0 1px 5px rgba(0,0,0,0.15);
+}
+
+.right{
+    margin-left: 30%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right svg{
+    transform: scale(1.5);
+}
+
+.right a:hover svg{
+    transform: scale(1.6);
+}
+
+.profile{
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.right p{
+    display:inline-block;
+    position: relative;
+    bottom: 5px;
+}
+
+.right span{
+    margin-right: 2.3vw;
+}
+
+.logout{
+    margin-left: 3vw;
+    cursor: pointer;
+}
+.logout svg:hover{
+    transform: scale(1.6);
+}
+.name{
+    font-size: 1.2rem;
+    position: relative;
+    top: 0;
+
+ }
+.sudoku{
+    font-size: 1.1rem;
+}
+.sudoku:hover{
+    font-size: 1.2rem;
+}
+.navHead{
+    font-size: 1.1rem;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+
+.burgerActive{
+    cursor: pointer;
+    transform: rotate(90deg) scale(1.2);
+    transition: 0.8s ease-out;
+}
+
+@keyframes appearIn{
+    from{
+        transform: translateY(-10vh);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .burger{
+        display: block;
+    }
+
+    .right span, .left a{
+        display: none;
+    }
+
+    .homeLink{
+        display: inline-block  !important;
+        margin-left: 30px !important;
+    }
+}

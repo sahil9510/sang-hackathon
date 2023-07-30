@@ -1,0 +1,63 @@
+
+
+.homeScreen{
+    margin-top: 5%;
+    background-image:url('orna.png') ;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 20% 90%;
+    text-align: center;
+    padding: 2% 10%;
+}
+
+.welcome{
+    font-size: 5rem;
+}
+
+
+.homeScreen h1{
+    font-family: 'Raleway', sans-serif;
+    color: #774936;
+    margin: 0;
+    /* font-size: 4.2rem; */
+}
+
+.welcome{
+    font-size: 5rem !important;
+    font-weight: 600;
+}
+
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px){
+    .homeScreen{
+        margin-top: 30%;
+    }
+
+    .welcome{
+        font-size: 4.3rem !important;
+    }
+    .row1{
+        flex-direction: column;
+    }
+}
